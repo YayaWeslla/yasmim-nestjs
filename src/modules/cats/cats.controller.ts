@@ -4,7 +4,7 @@ import { Controller, Get } from "@nestjs/common";
 class CatsController{
     @Get('/todos')
     findAll(): string{
-        return 'Gatofóbicos'
+        return this.catsService.findAll();
     }
 }
 
